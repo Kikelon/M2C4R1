@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+    <script src="./javascript.js "></script>
+    <title>Tienda de ropa</title>
+</head>
+
+<body class=" "  onload="loadData()">
+    <main>
+        <header>
+            <div class=" p-3">
+                <ul class="nav nav-tabs justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Productos</a>
+                    </li>
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="mostrarCarrito()">Carrito</button>
+                </ul>
+            </div>
+        </header>
+        <div>&nbsp;</div>
+        <div class="page-content " id="item-show">
+        </div>
+        <div>&nbsp;</div>
+        <div class="page-content " id="shopping-cart">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="contenidoCarrito">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Artículo</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Subtotal</th>
+                              </tr>
+                            </thead>
+                            <tbody id="basketBody">                                
+                            </tbody>
+                        </table>
+                        <div id="totalCarrito"></div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-dark" onclick = "total()">Comprar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </main>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

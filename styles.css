@@ -1,0 +1,60 @@
+*{
+    /* border: 1px solid red; */
+    /* Define las fuentes a usar en el proyercto */
+    font-family: Arial, Helvetica, sans-serif;
+    /*La unidad relativa será siempre igual a 12px*/
+    /* font-size: 62.5%; /*rem --> 1rem = 10px */
+    /* font-size: 12px; */
+    /* El borde de la caja se calculará como parte de la anchura y de la altura de la misma */
+    box-sizing: border-box;
+    /* Eliminamos todos los márgenes y los espacios para definirlos desde 0 */
+    margin: 0;
+    padding: 0;
+}
+
+html { 
+    background: url(./images/912.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#products-container{
+    display: flex;
+    justify-content: row;
+    align-self: center;
+    max-width: 70%;
+}
+
+button {
+    box-shadow: none!important;
+}
+
+.card-container {
+    margin: 15px;
+    padding: 2px 16px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.card-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.card-container img {
+    max-width: 150px;
+}
+
+.card-container h1 {
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
